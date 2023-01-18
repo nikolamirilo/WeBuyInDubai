@@ -1,0 +1,95 @@
+.card {
+  background-color: $cardBgColor;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  height: fit-content;
+  position: relative;
+  @include boxShadow;
+  @include flex(column, flex-start, center);
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 1vh;
+  }
+  @include media($xxl) {
+    width: 32%;
+    min-height: 35vh;
+    p {
+      @include paragraphFont;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+  @include media($xl) {
+    width: 32%;
+    min-height: 40vh;
+    p {
+      @include paragraphFont;
+      font-size: 1.1rem;
+      margin-top: 0rem;
+    }
+  }
+  @include media($lg) {
+    width: 45%;
+    p {
+      @include paragraphFont;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+  @include media($md) {
+    width: 80%;
+  }
+  @include media($sm) {
+    width: 90%;
+    min-height: fit-content;
+  }
+  @include media($xs) {
+    width: 96%;
+  }
+  @include media($xxs) {
+    width: 100%;
+  }
+  .icon {
+    position: absolute;
+    top: -2vh;
+    background-color: $gold;
+    border-radius: 100%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    @include flex(column, center, center);
+  }
+  h3 {
+    margin-top: 1vh;
+    font-size: 1.4rem;
+    font-family: $headingFontFamily;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  ul {
+    padding: 0 1vw;
+    @include flex(column, flex-start, flex-start);
+    gap: 1vh;
+    padding: 0 1.5vw;
+    @include media($lg) {
+      padding: 0 2vw;
+    }
+    @include media($md) {
+      padding: 0 2.5vw;
+    }
+    @include media($sm) {
+      padding: 0 3vw;
+    }
+    li {
+      @include paragraphFont;
+    }
+  }
+  span {
+    padding-top: 2vh;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}

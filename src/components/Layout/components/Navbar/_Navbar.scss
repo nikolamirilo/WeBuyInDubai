@@ -1,0 +1,98 @@
+.navbar {
+  min-height: 8vh;
+  max-height: 14vh;
+  z-index: 1000;
+  height: fit-content;
+  width: 100%;
+  background-color: $black;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-out;
+  @include fadeAnimation(0.4s, 0.1s);
+  @include flex(row, space-between, center);
+  padding: 1vh 5vw;
+  @include media($md) {
+    padding: 0.2vh 2vw;
+  }
+  .logo {
+    @include flex(row, center, center);
+    height: fit-content;
+    width: fit-content;
+    @include media($xs) {
+      display: block;
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+    }
+    img {
+      height: 10vh;
+      width: auto;
+    }
+  }
+  .navigation {
+    @include flex(column, center, center);
+    height: fit-content;
+    .hamburger {
+      background-color: transparent;
+      border: none;
+      position: fixed;
+      cursor: pointer;
+      top: 3.5vh;
+      right: 2vw;
+      color: $white;
+    }
+    .links {
+      @include flex(row, space-around, center);
+      height: 8vh;
+      width: fit-content;
+      gap: 3rem;
+      @include media($md) {
+        height: fit-content;
+        @include flex(column, flex-end, flex-end);
+        padding: 5rem 0rem 1rem 0;
+        gap: 1rem;
+        display: none;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        color: $white;
+        font-size: $linkFS;
+        cursor: pointer;
+        font-weight: 500;
+        transition-property: border, transform;
+        transform: scale(1);
+        transition-duration: 100ms;
+        transition-timing-function: ease-in;
+        &:hover {
+          border-bottom: 1px solid $white;
+          transform: scale(1.06);
+          @include media($md) {
+            transform: scale(1);
+          }
+        }
+        &:focus,
+        &:active {
+          border: none;
+        }
+      }
+    }
+  }
+}
+@include media($md) {
+  .active {
+    min-height: 40vh;
+    max-height: 45vh;
+    .links {
+      display: flex !important;
+      animation: linksSlideIn 1s ease-in 0s;
+    }
+  }
+}
+@keyframes linksSlideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+.layout {
+  width: 100%;
+  height: fit-content;
+  @include flex(column, none, none);
+  position: relative;
+  @import "./components/Footer/Footer";
+  @import "./components/Navbar/Navbar";
+  .app {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    padding: 10vh 0 15vh 0;
+    @include media($md) {
+      padding: 10vh 0 40vh 0;
+    }
+  }
+  .whatsapp-button {
+    position: fixed;
+    bottom: 2vh;
+    right: 4vw;
+    z-index: 10;
+    border-radius: 100%;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    .icon {
+      border-radius: 100%;
+      color: $white;
+      background-color: green;
+      border: 4px solid green;
+    }
+  }
+}

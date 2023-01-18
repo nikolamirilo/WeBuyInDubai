@@ -1,0 +1,27 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito&family=Roboto&display=swap");
+//Colors
+$black: #000;
+$white: #fff;
+$gray: #5c5c5c;
+$lightGray: rgb(172, 171, 171);
+$gold: #eeb238ff;
+$darkGold: rgb(175, 132, 45);
+$whiteSmoke: #fafafa;
+$darkGray: rgb(32, 32, 32);
+$cardBgColor: $white;
+//Breakpoints
+$xxs: 400px;
+$xs: 600px;
+$sm: 768px;
+$md: 1000px;
+$lg: 1200px;
+$xl: 1400px;
+$xxl: 2000px;
+//fontFamily
+$fontFamily: "Roboto", sans-serif;
+$headingFontFamily: "Roboto", sans-serif;
+$noteFontFamily: "Roboto", sans-serif;
+//Font Size
+$linkFS: 1.4rem;
+$paragraphFS: 1.2rem;

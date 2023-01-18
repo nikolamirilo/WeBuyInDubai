@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://webuyindubai.com/sitemap.xml

@@ -1,0 +1,54 @@
+.hero {
+  @include backgroundObjectImage(100%, 90vh);
+  @include flex(column, flex-start, flex-start);
+  padding: 15vh 5vw;
+  gap: 2vh;
+  @include media($md) {
+    @include backgroundObjectImage(100%, 100vh);
+    @include flex(column, flex-start, center);
+    padding: 25vh 0vw;
+  }
+  .heading {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 10px;
+    padding: 1.5rem 3rem;
+    @include slideInAnimation(0.4s, 0.6s);
+    @include flex(column, center, center);
+    gap: 2vh;
+    @include media($xs) {
+      padding: 4vh 0rem;
+      background-color: rgba(0, 0, 0, 0.566);
+      width: 100%;
+      border-radius: 0px;
+    }
+    h1 {
+      font-family: $headingFontFamily;
+      font-size: 3.5rem;
+      text-align: center;
+      color: $white;
+      text-shadow: 2px 2px $black;
+      @include slideInAnimation(0.5s, 1s);
+      @include media($md) {
+        font-size: 2.5rem;
+        text-align: center;
+        width: 96%;
+      }
+    }
+    p {
+      color: $white;
+      font-size: 1.8rem;
+      font-style: italic;
+      position: relative;
+      font-family: $fontFamily;
+      left: 1vw;
+      @include slideInAnimation(0.5s, 1.4s);
+      @include media($md) {
+        left: 0vw;
+        text-align: center;
+        width: 96%;
+      }
+    }
+  }
+}

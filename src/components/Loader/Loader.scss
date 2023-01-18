@@ -1,0 +1,10 @@
+.loader {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: $darkGray;
+  @include flex(column, center, center);
+  color: $gold;
+  z-index: 1000;
+}

@@ -1,0 +1,32 @@
+.map {
+  height: fit-content;
+  width: 100%;
+  @include flex(column, center, center);
+  @include pageSectionPadding;
+  gap: 5vh;
+  h1 {
+    font-family: $headingFontFamily;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 400;
+    color: $darkGray;
+    .swiss-logo {
+      position: relative;
+      top: 0.4rem;
+    }
+  }
+  iframe {
+    min-height: 70vh;
+    width: 80%;
+    border: none;
+    @include media($md) {
+      width: 80%;
+    }
+    @include media($sm) {
+      width: 96%;
+    }
+    @include media($xs) {
+      width: 100%;
+    }
+  }
+}

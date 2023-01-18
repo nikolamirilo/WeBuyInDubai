@@ -1,0 +1,72 @@
+@mixin flex($direction, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+@mixin buttonStyle {
+  font-size: $linkFS;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@mixin media($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin backgroundObjectImage($width, $height) {
+  background-position: center;
+  background-size: cover;
+  width: $width;
+  height: $height;
+}
+@mixin grid($templateColumns) {
+  display: grid;
+  grid-template-columns: $templateColumns;
+}
+@mixin pageSectionPadding {
+  padding: 10vh 10vw;
+  @include media($xs) {
+    padding: 10vh 3vw;
+  }
+}
+@mixin paragraphFont {
+  font-size: $paragraphFS;
+  color: $gray;
+  font-family: $fontFamily;
+}
+@mixin fadeAnimation($duration, $delay) {
+  opacity: 0;
+  animation: fade $duration ease-in $delay forwards;
+}
+@mixin slideInAnimation($duration, $delay) {
+  opacity: 0;
+  animation: slideIn $duration ease-in-out $delay forwards;
+}
+@mixin boxShadow {
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25), 0 0px 20px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    position: relative;
+    left: -7vw;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0vw;
+    opacity: 1;
+  }
+}
