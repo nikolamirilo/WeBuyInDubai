@@ -14,10 +14,8 @@
       width: 96%;
     }
   }
-
   .categories {
     @include pageSectionPadding;
-    border-top: 2px solid $lightGray;
     margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;

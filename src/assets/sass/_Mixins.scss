@@ -38,11 +38,11 @@
 }
 @mixin fadeAnimation($duration, $delay) {
   opacity: 0;
-  animation: fade $duration ease-in $delay forwards;
+  animation: fade $duration ease-in-out $delay forwards;
 }
 @mixin slideInAnimation($duration, $delay) {
   opacity: 0;
-  animation: slideIn $duration ease-in-out $delay forwards;
+  animation: slideIn $duration linear $delay forwards;
 }
 @mixin boxShadow {
   border-radius: 10px;
@@ -61,7 +61,7 @@
 @keyframes slideIn {
   0% {
     position: relative;
-    left: -7vw;
+    left: -10vw;
     opacity: 0;
   }
   100% {

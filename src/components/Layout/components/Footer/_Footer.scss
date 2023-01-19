@@ -2,46 +2,53 @@
   min-height: 8vh;
   height: fit-content;
   width: 100%;
-  background-color: $black;
+  background-color: $darkGray;
   color: $white;
   position: absolute;
   bottom: 0;
-  @include flex(row, space-between, center);
-  gap: 2rem;
-  padding: 1vh 10vw;
+  padding: 3vh 0;
+  @include flex(column, center, center);
+  gap: 4vh;
   @include media($xs) {
     @include flex(column, center, center);
-    padding: 5vh 2vw;
+    gap: 2vh;
+    padding: 12vh 2vw;
   }
-  .left-content {
-    @include flex(column, center, center);
-    img {
-      height: 10vh;
-      width: auto;
+
+  @include flex(column, center, center);
+  gap: 1vh;
+  .call-us,
+  .email-us {
+    @include flex(row, center, center);
+    gap: 6px;
+  }
+  a {
+    text-decoration: none;
+    font-size: $linkFS;
+    font-family: $noteFontFamily;
+    color: $white;
+    &:hover {
+      text-decoration: underline;
     }
   }
-  .contact-us {
-    @include flex(column, center, center);
-    a {
-      font-size: $linkFS;
-      color: $white;
+  .copyright {
+    @include flex(row, center, center);
+    font-size: $linkFS;
+    text-align: center;
+    font-size: $linkFS;
+    text-align: center;
+    span {
+      color: $gold;
+      font-size: 2rem;
+      margin-right: 6px;
+      position: relative;
+      bottom: 0rem;
     }
-  }
-  .right-content {
-    @include flex(column, center, center);
-    gap: 1vh;
-    a {
-      text-decoration: none;
-      font-size: $linkFS;
-      font-family: $noteFontFamily;
-      color: $white;
-      &:hover {
-        text-decoration: underline;
+    @include media($xs) {
+      @include flex(row, center, flex-start);
+      span {
+        bottom: 0.2rem;
       }
-    }
-    p {
-      font-size: 1.2rem;
-      text-align: center;
     }
   }
 }

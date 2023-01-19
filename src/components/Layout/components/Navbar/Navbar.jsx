@@ -10,7 +10,7 @@ const Navbar = () => {
   const location = useLocation();
   const [isActive, setIsActive] = useState({
     home: true,
-    luxuryWatches: true,
+    luxuryWatches: false,
   });
   const navigate = useNavigate();
   var nav = document.querySelector(".navbar");
@@ -44,6 +44,8 @@ const Navbar = () => {
     }
   }, []);
 
+  console.log(isActive);
+
   return (
     <nav className="navbar">
       <div
@@ -68,18 +70,20 @@ const Navbar = () => {
 
         <div className="links">
           <button
-            style={{ borderBottom: isActive.home ? "1px solid #ffff" : "none" }}
+            style={{ color: isActive.home ? "#f4a950" : "#fff" }}
             onClick={() => {
               navigate("/");
+              setIsActive({ home: true });
               closeSidebarOnLinkClick();
             }}
           >
             Home
           </button>
           <button
-            style={{ borderBottom: isActive.luxuryWatches ? "1px solid #ffff" : "none" }}
+            style={{ color: isActive.luxuryWatches ? "#f4a950" : "#fff" }}
             onClick={() => {
               navigate("/luxury-watches");
+              setIsActive({ luxuryWatches: true });
               closeSidebarOnLinkClick();
             }}
           >

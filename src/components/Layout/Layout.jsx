@@ -3,9 +3,11 @@ import { useLocation } from "react-router-dom";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { useGlobalState } from "./../../context/GlobalContext";
 
 const Layout = ({ children }) => {
   const location = useLocation();
+  const { width } = useGlobalState();
   const styleFunction = () => {
     switch (location.pathname) {
       case "/":
@@ -28,7 +30,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <a className="whatsapp-button">
-        <AiOutlineWhatsApp className="icon" size={80} />
+        <AiOutlineWhatsApp className="icon" size={width < 600 ? 60 : 75} />
       </a>
       <div className="footer-container">
         <Footer />
