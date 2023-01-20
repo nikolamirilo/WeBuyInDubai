@@ -31,6 +31,22 @@
       text-decoration: underline;
     }
   }
+  .website {
+    @include flex(row, center, center);
+    gap: 6px;
+    a {
+      text-decoration: none;
+      font-size: $linkFS;
+      font-family: $noteFontFamily;
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .icon {
+      color: $gold;
+    }
+  }
   .copyright {
     @include flex(row, center, center);
     font-size: $linkFS;

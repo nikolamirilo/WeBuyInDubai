@@ -8,8 +8,6 @@
 }
 body {
   background-color: $whiteSmoke;
-}
-body {
   h1,
   h2,
   h3,
@@ -23,6 +21,7 @@ body {
     font-family: $fontFamily;
   }
 }
+
 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: 8px;
