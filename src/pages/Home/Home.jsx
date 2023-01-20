@@ -11,11 +11,7 @@ const Home = () => {
         {data.categories
           ? data.categories.map((item) => {
               return (
-                <Card
-                  key={item.id}
-                  title={item.title}
-                  image="https://cdn.mos.cms.futurecdn.net/RNhgesJJB6NGUTYpmarnmi.jpg"
-                />
+                <Card key={item.id} title={item.title} image="https://i.ytimg.com/vi/aeQnQ-vjtuY/maxresdefault.jpg" />
               );
             })
           : null}

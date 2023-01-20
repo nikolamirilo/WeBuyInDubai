@@ -26,9 +26,9 @@
   grid-template-columns: $templateColumns;
 }
 @mixin pageSectionPadding {
-  padding: 10vh 10vw;
+  padding: 5vh 10vw;
   @include media($xs) {
-    padding: 10vh 3vw;
+    padding: 5vh 3vw;
   }
 }
 @mixin paragraphFont {

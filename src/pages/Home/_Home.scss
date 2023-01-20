@@ -2,7 +2,7 @@
   height: fit-content;
   @include fadeAnimation(0.4s, 0.1s);
   @include flex(column, center, center);
-  padding: 2vh 0;
+  padding: 0;
   h1 {
     font-family: $fontFamily;
     font-size: 2.5rem;
@@ -16,7 +16,6 @@
   }
   .categories {
     @include pageSectionPadding;
-    margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
     width: 100%;

@@ -7,6 +7,10 @@ const ScrollToTop = ({ children }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location]);
 
+  // window.addEventListener("beforeunload", () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // });
+
   return <>{children}</>;
 };
 export default ScrollToTop;

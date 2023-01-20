@@ -17,8 +17,16 @@
   }
   .whatsapp-button {
     position: fixed;
-    bottom: 2vh;
-    right: 4vw;
+    bottom: 20px;
+    right: 30px;
+    @include media($sm) {
+      bottom: 12px;
+      right: 15px;
+    }
+    @include media($xs) {
+      bottom: 7.5px;
+      right: 10px;
+    }
     z-index: 10;
     border-radius: 100%;
     width: fit-content;

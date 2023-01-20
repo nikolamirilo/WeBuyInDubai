@@ -1,10 +1,10 @@
 {
   "categories": [
-    { "id": 1, "title": ["Sell Your", "PHONE", "for cash today"] },
-    { "id": 2, "title": ["We Buy", "TABLETS", "on you doorstep"] },
-    { "id": 3, "title": ["Sell Your", "LAPTOP", "seven days a week"] },
-    { "id": 4, "title": ["We Buy", "CAMERAS", "used & new"] },
-    { "id": 5, "title": ["Sell Your", "SMARTWATCH", "now"] },
-    { "id": 6, "title": ["We Buy", "LUXURY WATCHES", "24/7"] }
+    { "id": 1, "title": ["Sell Your", "Cell Phone", "for cash today"] },
+    { "id": 2, "title": ["We Buy", "Tablets", "on you doorstep"] },
+    { "id": 3, "title": ["Sell Your", "Laptops", "seven days a week"] },
+    { "id": 4, "title": ["We Buy", "Cameras", "used & new"] },
+    { "id": 5, "title": ["Sell Your", "Smartwatch", "now"] },
+    { "id": 6, "title": ["We Buy", "Luxury Watches", "24/7"] }
   ]
 }

@@ -3,24 +3,29 @@
   border-radius: 20px;
   height: fit-content;
   position: relative;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   box-shadow: 5px 5px 10px #999;
   cursor: pointer;
   @include flex(column-reverse, flex-start, center);
   .title {
     @include flex(column, center, center);
     gap: 0.5vh;
-    margin: 1vh;
+    margin: 3vh;
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-family: $fontFamily;
       font-weight: 700;
       text-align: center;
+      &:nth-child(2) {
+        font-size: 1.8rem;
+        color: $darkGray;
+      }
     }
   }
   img {
     width: 100%;
     height: auto;
+    border-radius: 0 0 10px 10px;
   }
   @include media($xxl) {
     width: 32%;
