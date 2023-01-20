@@ -32,14 +32,12 @@
     }
     h3 {
       font-size: 1.6rem;
-      font-family: $fontFamily;
       color: $black;
       text-align: center;
       width: 90%;
     }
     p {
       font-size: $linkFS;
-      font-family: $fontFamily;
       color: $black;
       text-align: center;
       width: 90%;
@@ -47,7 +45,6 @@
     button {
       background-color: rgb(223, 11, 11);
       font-size: $linkFS;
-      font-family: $fontFamily;
       color: $white;
       border: none;
       border-radius: 10px;

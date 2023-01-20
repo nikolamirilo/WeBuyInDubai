@@ -34,7 +34,6 @@
 @mixin paragraphFont {
   font-size: $paragraphFS;
   color: $gray;
-  font-family: $fontFamily;
 }
 @mixin fadeAnimation($duration, $delay) {
   opacity: 0;

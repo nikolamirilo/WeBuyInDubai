@@ -25,7 +25,6 @@
       border-radius: 0px;
     }
     h1 {
-      font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 5.5rem;
       text-transform: uppercase;
       font-weight: 900;
@@ -44,7 +43,6 @@
       font-size: 2.5rem;
       position: relative;
       font-weight: 500;
-      font-family: $fontFamily;
       @include slideInAnimation(0.5s, 1.4s);
       @include media($md) {
         left: 0vw;

@@ -25,7 +25,7 @@
     button,
     a,
     div {
-      font-family: $fontFamily;
+      font-family: $fontFamily, Arial, Helvetica, sans-serif !important;
     }
   }
 
@@ -57,6 +57,7 @@
     margin: 0;
     box-sizing: border-box;
     color-scheme: only light !important;
+    -webkit-tap-highlight-color: transparent;
   }
   :root {
     color-scheme: only light !important;
@@ -74,7 +75,7 @@
     button,
     a,
     div {
-      font-family: $fontFamily;
+      font-family: $fontFamily, Arial, Helvetica, sans-serif !important;
     }
   }
 
