@@ -5,12 +5,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color-scheme: only light !important;
 }
 :root {
-  color-scheme: light only;
+  color-scheme: only light !important;
 }
 body {
   background-color: $whiteSmoke;
+  color-scheme: only light !important;
   h1,
   h2,
   h3,
