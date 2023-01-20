@@ -10,9 +10,9 @@
     width: 100%;
     min-height: 100vh;
     height: fit-content;
-    padding: 10vh 0 15vh 0;
+    padding: 10vh 0 0 0;
     @include media($md) {
-      padding: 8vh 0 40vh 0;
+      padding: 8vh 0 0vh 0;
     }
   }
   .whatsapp-button {
@@ -25,13 +25,14 @@
     height: fit-content;
     border: none;
     cursor: pointer;
-
-    .icon {
-      border-radius: 100%;
-      color: $white;
-      background-color: $green;
+    img {
+      width: 100px;
+      height: auto;
       @include fadeAnimation(0.4s, 0.1s);
-      padding: 5px;
+      @include media($xs) {
+        width: 75px;
+        height: auto;
+      }
     }
   }
 }

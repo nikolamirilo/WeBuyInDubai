@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   transition: all 0.5s ease-out;
-  @include fadeAnimation(0.4s, 0.1s);
+  @include fadeAnimation(0.3s, 0.1s);
   @include flex(row, space-between, center);
   padding: 1vh 5vw;
   @include media($md) {
@@ -21,7 +21,7 @@
     @include media($xs) {
       display: block;
       margin-top: 0.5rem;
-      margin-left: 0.5rem;
+      margin-left: 0rem;
     }
     img {
       height: 10vh;
@@ -37,8 +37,12 @@
       position: fixed;
       cursor: pointer;
       top: 3.5vh;
-      right: 2vw;
+      right: 5vw;
       color: $white;
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
     }
     .links {
       @include flex(row, space-around, center);
@@ -49,8 +53,34 @@
         height: fit-content;
         @include flex(column, flex-end, flex-end);
         padding: 5rem 0rem 1rem 0;
+        margin-right: 2vw;
         gap: 1rem;
         display: none;
+      }
+      .phone {
+        @include flex(row, center, center);
+        a {
+          text-decoration: none;
+          font-size: $linkFS;
+          font-family: $fontFamily;
+          color: $white;
+          transition-property: transform;
+          transform: scale(1);
+          transition-duration: 100ms;
+          transition-timing-function: ease-in;
+          &:hover {
+            color: $gold;
+            transform: scale(1.1);
+            color: $gold;
+            @include media($md) {
+              transform: scale(1);
+              color: $white;
+            }
+          }
+          &:focus {
+            color: $gold;
+          }
+        }
       }
       button {
         background-color: transparent;
@@ -65,13 +95,16 @@
         transition-timing-function: ease-in;
         &:hover {
           transform: scale(1.1);
+          color: $gold;
           @include media($md) {
             transform: scale(1);
+            color: $white;
           }
         }
         &:focus,
         &:active {
           border: none;
+          color: $gold;
         }
       }
     }

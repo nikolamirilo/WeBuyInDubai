@@ -1,10 +1,10 @@
 {
   "categories": [
-    { "id": 1, "title": "Mobile Phones", "subtitle": "Subtitle of this category" },
-    { "id": 2, "title": "Tablets", "subtitle": "Subtitle of this category" },
-    { "id": 3, "title": "Laptops", "subtitle": "Subtitle of this category" },
-    { "id": 4, "title": "Cameras for Photography", "subtitle": "Subtitle of this category" },
-    { "id": 5, "title": "Smart Watches", "subtitle": "Subtitle of this category" },
-    { "id": 6, "title": "Luxury Watches", "subtitle": "Subtitle of this category" }
+    { "id": 1, "title": "Sell Your PHONE for cash today" },
+    { "id": 2, "title": "We Buy TABLETS on you doorstep" },
+    { "id": 3, "title": "Sell Your LAPTOP seven days a week" },
+    { "id": 4, "title": "We Buy CAMERAS used & new" },
+    { "id": 5, "title": "Sell Your SMARTWATCH now" },
+    { "id": 6, "title": "We Buy LUXURY WATCHES 24/7" }
   ]
 }

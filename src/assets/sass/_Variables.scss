@@ -1,5 +1,8 @@
 //Fonts
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito&family=Roboto&display=swap");
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("fonts/SF-Pro-Regular.ttf") format("truetype");
+}
 //Colors
 $black: #000;
 $white: #fff;
@@ -20,9 +23,7 @@ $lg: 1200px;
 $xl: 1400px;
 $xxl: 2000px;
 //fontFamily
-$fontFamily: "Roboto", sans-serif;
-$headingFontFamily: "Roboto", sans-serif;
-$noteFontFamily: "Roboto", sans-serif;
+$fontFamily: "SF Pro Regular";
 //Font Size
 $linkFS: 1.4rem;
 $paragraphFS: 1.2rem;

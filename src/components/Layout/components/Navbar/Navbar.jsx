@@ -58,37 +58,38 @@ const Navbar = () => {
       </div>
       <div className="navigation">
         {width < 1000 && (
-          <button
+          <div
             className="hamburger"
             onClick={() => {
               handleHamburgerClick();
             }}
           >
             <GiHamburgerMenu size={40} />
-          </button>
+          </div>
         )}
 
         <div className="links">
           <button
-            style={{ color: isActive.home ? "#f4a950" : "#fff" }}
             onClick={() => {
               navigate("/");
-              setIsActive({ home: true });
               closeSidebarOnLinkClick();
             }}
           >
             Home
           </button>
           <button
-            style={{ color: isActive.luxuryWatches ? "#f4a950" : "#fff" }}
             onClick={() => {
               navigate("/luxury-watches");
-              setIsActive({ luxuryWatches: true });
               closeSidebarOnLinkClick();
             }}
           >
             Luxury Watches
           </button>
+          <div className="phone">
+            <a href="tel: +957" onClick={closeSidebarOnLinkClick}>
+              +957 676 9012
+            </a>
+          </div>
         </div>
       </div>
     </nav>
