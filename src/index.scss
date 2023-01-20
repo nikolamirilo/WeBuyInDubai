@@ -6,6 +6,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  color-scheme: light only;
+}
 body {
   background-color: $whiteSmoke;
   h1,
