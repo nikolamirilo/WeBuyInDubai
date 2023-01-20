@@ -1,47 +1,98 @@
-@import "/src/assets/sass/index";
-@import "/src/pages/index";
-@import "/src/components/index";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color-scheme: only light !important;
-}
-:root {
-  color-scheme: only light !important;
-}
-body {
-  background-color: $whiteSmoke !important;
-  color-scheme: only light !important;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p,
-  span,
-  button,
-  a,
-  div {
-    font-family: $fontFamily;
+@media (prefers-color-scheme: dark) {
+  @import "/src/assets/sass/index";
+  @import "/src/pages/index";
+  @import "/src/components/index";
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color-scheme: only light !important;
+  }
+  :root {
+    color-scheme: only light !important;
+  }
+  body {
+    background-color: $whiteSmoke !important;
+    color-scheme: only light !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span,
+    button,
+    a,
+    div {
+      font-family: $fontFamily;
+    }
+  }
+
+  /*Scrollbar*/
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $white;
+    border-radius: 0rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $gold;
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $gold;
   }
 }
+@media (prefers-color-scheme: light) {
+  @import "/src/assets/sass/index";
+  @import "/src/pages/index";
+  @import "/src/components/index";
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color-scheme: only light !important;
+  }
+  :root {
+    color-scheme: only light !important;
+  }
+  body {
+    background-color: $whiteSmoke !important;
+    color-scheme: only light !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span,
+    button,
+    a,
+    div {
+      font-family: $fontFamily;
+    }
+  }
 
-/*Scrollbar*/
-::-webkit-scrollbar {
-  width: 8px;
-}
+  /*Scrollbar*/
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
 
-::-webkit-scrollbar-track {
-  background: $white;
-  border-radius: 0rem;
-}
+  ::-webkit-scrollbar-track {
+    background: $white;
+    border-radius: 0rem;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: $gold;
-  border-radius: 1rem;
-}
+  ::-webkit-scrollbar-thumb {
+    background: $gold;
+    border-radius: 1rem;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: $gold;
+  ::-webkit-scrollbar-thumb:hover {
+    background: $gold;
+  }
 }
