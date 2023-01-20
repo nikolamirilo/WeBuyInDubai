@@ -10,7 +10,7 @@
   transition: all 0.5s ease-out;
   @include fadeAnimation(0.3s, 0.1s);
   @include flex(row, space-between, center);
-  padding: 1vh 5vw;
+  padding: 0vh 5vw;
   @include media($md) {
     padding: 0.2vh 2vw;
   }
@@ -60,6 +60,7 @@
       .phone {
         @include flex(row, center, center);
         a {
+          text-decoration: none;
           font-size: $linkFS;
           font-family: $fontFamily;
           color: $white;

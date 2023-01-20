@@ -2,7 +2,6 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
-import Map from "./../Map/Map";
 import wha_logo from "../../assets/images/wha_logo.png";
 
 const Layout = ({ children }) => {
@@ -32,7 +31,6 @@ const Layout = ({ children }) => {
         <img src={wha_logo} alt="Whatsapp" />
       </a>
       <div className="footer-container">
-        <Map />
         <Footer />
       </div>
     </div>

@@ -39,11 +39,11 @@
         width: 96%;
       }
     }
-    p {
+    h2 {
       color: $white;
       font-size: 2.5rem;
-      font-style: italic;
       position: relative;
+      font-weight: 500;
       font-family: $fontFamily;
       @include slideInAnimation(0.5s, 1.4s);
       @include media($md) {
