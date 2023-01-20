@@ -14,7 +14,7 @@ const Home = () => {
                 <Card
                   key={item.id}
                   title={item.title}
-                  image="https://images.immediate.co.uk/production/volatile/sites/30/2018/09/Terminice-2020-Version-High-End-Fitness-Tracker-landscape-72e8a46.jpg"
+                  image="https://cdn.mos.cms.futurecdn.net/RNhgesJJB6NGUTYpmarnmi.jpg"
                 />
               );
             })

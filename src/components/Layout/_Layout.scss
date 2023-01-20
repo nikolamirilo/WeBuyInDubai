@@ -26,11 +26,19 @@
     border: none;
     cursor: pointer;
     img {
-      width: 100px;
+      width: 90px;
       height: auto;
       @include fadeAnimation(0.4s, 0.1s);
+      @include media($lg) {
+        width: 90px;
+        height: auto;
+      }
+      @include media($md) {
+        width: 80px;
+        height: auto;
+      }
       @include media($xs) {
-        width: 75px;
+        width: 70px;
         height: auto;
       }
     }
