@@ -68,16 +68,15 @@
           transition-duration: 100ms;
           transition-timing-function: ease-in;
           &:hover {
-            color: $gold;
             transform: scale(1.1);
-            color: $gold;
+            color: $gold !important;
             @include media($md) {
               transform: scale(1);
               color: $white;
             }
           }
           &:focus {
-            color: $gold;
+            color: $gold !important;
           }
         }
       }

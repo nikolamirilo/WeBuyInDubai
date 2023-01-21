@@ -9,7 +9,6 @@
     font-weight: 400;
     color: $darkGray;
     text-align: center;
-    gap: 5vh;
     @include media($xs) {
       width: 96%;
     }

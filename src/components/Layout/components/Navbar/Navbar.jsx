@@ -70,6 +70,7 @@ const Navbar = () => {
 
         <div className="links">
           <button
+            style={{ color: isActive.home && "#f4a950" }}
             onClick={() => {
               navigate("/");
               closeSidebarOnLinkClick();
@@ -78,6 +79,7 @@ const Navbar = () => {
             Home
           </button>
           <button
+            style={{ color: isActive.luxuryWatches && "#f4a950" }}
             onClick={() => {
               navigate("/luxury-watches");
               closeSidebarOnLinkClick();
