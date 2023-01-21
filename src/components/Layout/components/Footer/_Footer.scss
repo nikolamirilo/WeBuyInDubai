@@ -10,7 +10,7 @@
   @include media($xs) {
     @include flex(column, center, center);
     gap: 2vh;
-    height: 15vh;
+    height: 8vh;
   }
 
   @include flex(column, center, center);

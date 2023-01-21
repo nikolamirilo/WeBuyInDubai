@@ -14,10 +14,10 @@ const Footer = () => {
         <BsTelephone className="icon" size={25} color="#f4a950" />
         <a href="tel: +957">+957 676 9012</a>
       </div>
-      <div className="website">
+      {/* <div className="website">
         <FiChrome size={25} className="icon" />
         <Link to="/">WeBuyInDubai.com</Link>
-      </div>
+      </div> */}
     </footer>
   );
 };

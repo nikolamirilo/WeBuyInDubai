@@ -1,10 +1,33 @@
 {
   "categories": [
-    { "id": 1, "title": ["Sell Your", "Mobile Phone", "Get the best price"] },
-    { "id": 2, "title": ["We Buy", "Tablets", "On you doorstep"] },
-    { "id": 3, "title": ["Sell Your", "Laptop", "For cash today"] },
-    { "id": 4, "title": ["We Buy", "DSLR Cameras", "Seven days a week"] },
-    { "id": 5, "title": ["Sell Your", "Smartwatch", "Fast and easy"] },
-    { "id": 6, "title": ["We Buy", "Luxury Watches", "From AP to Zenith"] }
+    { "id": 1, "title": ["Sell Your", "Mobile Phone.", "Get the best price."] },
+    { "id": 2, "title": ["We Buy", "Tablets.", "On your doorstep."] },
+    { "id": 3, "title": ["Sell Your", "Laptop", "For cash today."] },
+    { "id": 4, "title": ["We Buy", "DSLR Cameras.", "Seven days a week."] },
+    { "id": 5, "title": ["Sell Your", "Smartwatch.", "Fast and easy."] },
+    { "id": 6, "title": ["We Buy", "Luxury Watches.", "From AP to Zenith."] }
+  ],
+  "watches_brands": [
+    "Audemars Piguet",
+    "Blancpain",
+    "Breguet",
+    "Breitling",
+    "Cartier",
+    "Chopard",
+    "Franck Muller",
+    "Hublot",
+    "IWC",
+    "Jacob &Co",
+    "Jaquet Droz",
+    "Jaeger-LeCoultre",
+    "Omega",
+    "Panerai",
+    "Patek Philippe",
+    "Rolex",
+    "Richard Mille",
+    "TAG Heuer",
+    "Ulysse Nardin",
+    "Vacheron Constantin",
+    "Zenith & more"
   ]
 }

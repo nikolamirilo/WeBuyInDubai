@@ -2,4 +2,48 @@
   height: fit-content;
   @include fadeAnimation(0.4s, 0.1s);
   @include flex(column, center, center);
+  .hero {
+    @include flex(row, flex-start, center);
+    @include media($xs) {
+      @include flex(row, center, center);
+    }
+    .heading {
+      @include flex(row, flex-start, center);
+      @include media($xs) {
+        @include flex(row, center, center);
+        background-color: rgba(0, 0, 0, 0.699);
+        height: 120vh;
+      }
+      h1 {
+        font-size: 3.5rem;
+        text-transform: none;
+        width: 40%;
+        @include media($xs) {
+          width: 94%;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  h2 {
+    margin-top: 2.5vh;
+    font-size: 2.5rem;
+  }
+  .watches-brands {
+    @include pageSectionPadding;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 2.5vh;
+    justify-content: space-around;
+    @include media($md) {
+      @include flex(column, center, center);
+    }
+    .card {
+      h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+  }
 }
