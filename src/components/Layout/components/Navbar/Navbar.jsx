@@ -44,8 +44,6 @@ const Navbar = () => {
     }
   }, []);
 
-  console.log(isActive);
-
   return (
     <nav className="navbar">
       <div
