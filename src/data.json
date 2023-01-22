@@ -2,8 +2,8 @@
   "categories": [
     { "id": 1, "title": ["Sell Your", "Mobile Phone.", "Get the best price."] },
     { "id": 2, "title": ["We Buy", "Tablets.", "On your doorstep."] },
-    { "id": 3, "title": ["Sell Your", "Laptop", "For cash today."] },
-    { "id": 4, "title": ["We Buy", "DSLR Cameras.", "Seven days a week."] },
+    { "id": 3, "title": ["Sell Your", "Laptop.", "For cash today."] },
+    { "id": 4, "title": ["We Buy", "Cameras.", "Seven days a week."] },
     { "id": 5, "title": ["Sell Your", "Smartwatch.", "Fast and easy."] },
     { "id": 6, "title": ["We Buy", "Luxury Watches.", "From AP to Zenith."] }
   ],
@@ -17,7 +17,7 @@
     "Franck Muller",
     "Hublot",
     "IWC",
-    "Jacob &Co",
+    "Jacob & Co",
     "Jaquet Droz",
     "Jaeger-LeCoultre",
     "Omega",
@@ -28,6 +28,6 @@
     "TAG Heuer",
     "Ulysse Nardin",
     "Vacheron Constantin",
-    "Zenith & more"
+    "Zenith"
   ]
 }

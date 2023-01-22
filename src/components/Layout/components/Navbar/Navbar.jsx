@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useGlobalState } from "./../../../../context/GlobalContext";
-import logo from "../../../../assets/images/logo.png";
+import logo from "../../../../assets/images/WeBuyInDubai.png";
 
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState(false);

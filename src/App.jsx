@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout, Loader, ScrollToTop } from "./components";
 import { useGlobalState } from "./context/GlobalContext";
@@ -10,7 +10,7 @@ const LuxuryWatches = React.lazy(() => import("./pages/LuxuryWatches/LuxuryWatch
 const Error = React.lazy(() => import("./pages/Error/Error"));
 
 const App = () => {
-  const { loading } = useGlobalState();
+  const { loading, setLoading } = useGlobalState();
   useLoader();
   return (
     <Layout>

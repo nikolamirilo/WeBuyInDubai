@@ -1,9 +1,10 @@
-import ScaleLoader from "react-spinners/ScaleLoader";
+import React from "react";
+import logo from "../../assets/images/WeBuyInDubai.png";
 
 const Loader = () => {
   return (
     <div className="loader">
-      <ScaleLoader size={70} color="#f4a950" />
+      <img src={logo} alt="Logo" />
     </div>
   );
 };

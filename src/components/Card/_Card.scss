@@ -10,7 +10,8 @@
   .title {
     @include flex(column, center, center);
     gap: 0.5vh;
-    margin: 3vh;
+    margin: 2vh;
+    height: 10vh;
     h2 {
       font-size: 1.2rem;
       font-weight: 700;
