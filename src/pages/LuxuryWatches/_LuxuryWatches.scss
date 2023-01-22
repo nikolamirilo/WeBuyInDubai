@@ -1,6 +1,5 @@
 .luxury-watches {
   height: fit-content;
-  @include fadeAnimation(0.4s, 0.1s);
   @include flex(column, center, center);
   .hero {
     padding: 0;

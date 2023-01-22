@@ -1,5 +1,5 @@
 .navbar {
-  min-height: 8vh;
+  min-height: 10vh;
   height: fit-content;
   z-index: 1000;
   height: fit-content;
@@ -7,13 +7,11 @@
   background-color: $darkGray;
   position: fixed;
   top: 0;
-  transition: all 0.5s ease-out;
-  @include fadeAnimation(0.3s, 0.1s);
   @include flex(row, space-between, center);
   padding: 0vh 5vw;
   @include media($md) {
     padding: 0.2vh 2vw;
-    min-height: 10vh;
+    min-height: 15vh;
   }
   .logo {
     @include flex(row, center, center);
@@ -25,7 +23,7 @@
       margin-left: 0rem;
     }
     img {
-      height: 10vh;
+      height: 8vh;
       margin: 1vh 0;
       width: auto;
     }
@@ -38,7 +36,7 @@
       border: none;
       position: fixed;
       cursor: pointer;
-      top: 3.5vh;
+      top: 4.5vh;
       right: 5vw;
       color: $white;
       &:focus {
@@ -48,7 +46,7 @@
     }
     .links {
       @include flex(row, space-around, center);
-      height: 8vh;
+      height: 100%;
       width: fit-content;
       gap: 3rem;
       @include media($md) {
@@ -113,7 +111,7 @@
     max-height: 35vh;
     .links {
       display: flex !important;
-      animation: linksSlideIn 1s ease-in 0s;
+      animation: linksSlideIn 0.4s ease-in 0s;
     }
   }
 }
@@ -123,5 +121,13 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (orientation: landscape) {
+  .navbar {
+    .hamburger {
+      top: 1vh;
+    }
   }
 }
