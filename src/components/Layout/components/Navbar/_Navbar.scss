@@ -3,6 +3,7 @@
   height: fit-content;
   z-index: 1000;
   transition: all 0.5s ease-out;
+  max-height: 30vh;
   @include fadeAnimation(0.4s, 0.1s);
   width: 100%;
   background-color: $darkGray;
@@ -37,7 +38,7 @@
       cursor: pointer;
       top: 2.5vh;
       right: 5vw;
-      .icon{
+      .icon {
         font-size: 2rem;
         color: $white;
       }
@@ -109,11 +110,11 @@
 }
 @include media($md) {
   .active {
-    min-height: 15vh;
-    max-height: 35vh;
+    min-height: 18vh;
+    max-height: 30vh;
     .links {
       display: flex !important;
-      animation: linksSlideIn 0.8s ease-in 0s;
+      animation: linksSlideIn 1s ease-in 0s;
     }
   }
 }
