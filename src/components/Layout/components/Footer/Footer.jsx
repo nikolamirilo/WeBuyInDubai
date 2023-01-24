@@ -1,9 +1,6 @@
 import React from "react";
-import { useGlobalState } from "./../../../../context/GlobalContext";
-import { AiOutlineMail, AiOutlineCopyrightCircle } from "react-icons/ai";
-import { FiChrome } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { useGlobalState } from "./../../../../context/GlobalContext";
 
 const Footer = () => {
   const { contactSection } = useGlobalState();
@@ -12,7 +9,7 @@ const Footer = () => {
     <footer className="footer" ref={contactSection}>
       <div className="call-us">
         <BsTelephone className="icon" size={25} color="#f4a950" />
-        <a href="tel: +957">+957 676 9012</a>
+        <a href="tel: +971 12 345 6789">+971 12 345 6789</a>
       </div>
       {/* <div className="website">
         <FiChrome size={25} className="icon" />

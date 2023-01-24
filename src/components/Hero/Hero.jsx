@@ -4,12 +4,12 @@ const Hero = (props) => {
   return (
     <div className="hero" style={{ backgroundImage: `url(${props.image})` }}>
       <div className="heading">
-        {props.type === "luxury-watches" ? props.title.map((item, idx)=>{
+       { props.title.map((item, idx)=>{
           return(
             <h1 key={idx}>{item}</h1>
           )
-        }) :  <h1>{props.title}</h1>}
-        {props.subtitle ? <h2>{props.subtitle}</h2> : null}
+          })}
+        <a href="tel:+971 12 345 6789">+971 12 345 6789</a>
       </div>
     </div>
   );

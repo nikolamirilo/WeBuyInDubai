@@ -8,8 +8,10 @@
   color: $gold;
   z-index: 1000;
   img {
-    height: 10vh;
+    height: 9vh;
     width: auto;
     transform: rotate(360deg);
+    position: relative;
+    bottom:3vh;
   }
 }

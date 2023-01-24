@@ -86,7 +86,7 @@
         font-size: $linkFS;
         cursor: pointer;
         font-weight: 500;
-        transition-property: border, transform;
+        transition-property: transform;
         transform: scale(1);
         transition-duration: 100ms;
         transition-timing-function: ease-in;

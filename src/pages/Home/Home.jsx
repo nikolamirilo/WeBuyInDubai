@@ -1,19 +1,19 @@
 import React from "react";
-import { Card, Hero, Map } from "../../components";
-import data from "../../data.json";
 import background from "../../assets/images/home/background.jpg";
-import luxury_watches from "../../assets/images/home/WeBuyWatches.jpg";
+import cameras from "../../assets/images/home/WeBuyCameras.jpg";
+import laptops from "../../assets/images/home/WeBuyLaptops.jpg";
 import mobile_phones from "../../assets/images/home/WeBuyMobilePhones.jpg";
 import smartwatches from "../../assets/images/home/WeBuySmartwatches.jpg";
-import laptops from "../../assets/images/home/WeBuyLaptops.jpg";
 import tablets from "../../assets/images/home/WeBuyTablets.jpg";
-import cameras from "../../assets/images/home/WeBuyCameras.jpg";
+import luxury_watches from "../../assets/images/home/WeBuyWatches.jpg";
+import { Card, Hero, Map } from "../../components";
+import data from "../../data.json";
 
 const Home = () => {
   const images = [mobile_phones, tablets, laptops, cameras, smartwatches, luxury_watches];
   return (
     <div className="home">
-      <Hero title="WE BUY IN DUBAI" subtitle="BEST PRICE FOR YOUR DEVICE" image={background} />
+      <Hero title={["We buy","used","mobile","phones","in Dubai","for cash."]} image={background} />
       <div className="categories">
         {data.categories
           ? data.categories.map((item, idx) => {

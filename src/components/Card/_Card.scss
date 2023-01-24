@@ -79,3 +79,10 @@
     font-weight: bold;
   }
 }
+@media (orientation: landscape) and (max-width: $md) {
+  .card{
+    .title{
+      height: 20vh;
+    }
+  }
+}

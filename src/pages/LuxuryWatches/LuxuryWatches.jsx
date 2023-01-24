@@ -50,7 +50,7 @@ const LuxuryWatches = () => {
   ];
   return (
     <div className="luxury-watches">
-      <Hero type="luxury-watches" title={["We buy", "authentic", "luxury", "watches", "in Dubai", "for cash."]} image={background} />
+      <Hero  title={["We buy", "authentic", "luxury", "watches", "in Dubai", "for cash."]} image={background} />
       <div className="watches-brands">
         {data.watches_brands.map((item, idx) => {
           return <Card key={idx} type="luxury-watches" title={item} image={images[idx]} />;
