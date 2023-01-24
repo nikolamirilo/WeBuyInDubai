@@ -62,7 +62,7 @@ const Navbar = () => {
               handleHamburgerClick();
             }}
           >
-            <GiHamburgerMenu size={35} />
+            <GiHamburgerMenu className="icon"/>
           </div>
         )}
 

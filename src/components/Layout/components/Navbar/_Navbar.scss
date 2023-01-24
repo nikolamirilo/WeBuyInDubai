@@ -2,7 +2,8 @@
   min-height: 8vh;
   height: fit-content;
   z-index: 1000;
-  height: fit-content;
+  transition: all 0.5s ease-out;
+  @include fadeAnimation(0.4s, 0.1s);
   width: 100%;
   background-color: $darkGray;
   position: fixed;
@@ -32,10 +33,14 @@
       background-color: transparent;
       border: none;
       position: fixed;
+      height: fit-content;
       cursor: pointer;
       top: 2.5vh;
       right: 5vw;
-      color: $white;
+      .icon{
+        font-size: 2rem;
+        color: $white;
+      }
       &:focus {
         box-shadow: none;
         outline: none;
@@ -49,7 +54,7 @@
       @include media($md) {
         height: fit-content;
         @include flex(column, flex-end, flex-end);
-        padding: 4.5rem 0rem 1rem 0;
+        padding: 3.6rem 0rem 0.5rem 0;
         margin-right: 2vw;
         gap: 0.2rem;
         display: none;
@@ -108,7 +113,7 @@
     max-height: 35vh;
     .links {
       display: flex !important;
-      animation: linksSlideIn 0.4s ease-in 0s;
+      animation: linksSlideIn 0.8s ease-in 0s;
     }
   }
 }
