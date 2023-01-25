@@ -32,11 +32,11 @@
       text-transform: none;
       @include slideInAnimation(0.5s, 1s);
       @include media($md) {
-        font-size: 3rem;
+        font-size: 2.5rem;
         width: 80%;
       }
       @include media($xs) {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
         text-align: center;
         width: 96%;
       }
