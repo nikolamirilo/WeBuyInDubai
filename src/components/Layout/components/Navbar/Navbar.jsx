@@ -39,7 +39,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   useEffect(() => {
-    if (width <= 1000) {
+    if (width <= 600) {
       setIsActive(false);
     }
   }, []);
@@ -62,7 +62,7 @@ const Navbar = () => {
               handleHamburgerClick();
             }}
           >
-            <GiHamburgerMenu className="icon"/>
+            <GiHamburgerMenu className="icon" />
           </div>
         )}
 
@@ -86,8 +86,8 @@ const Navbar = () => {
             Luxury Watches
           </button>
           <div className="phone">
-            <a href="tel: +971 12 345 6789" onClick={closeSidebarOnLinkClick}>
-            +971 12 345 6789
+            <a href="tel:+971 12 345 6789" onClick={closeSidebarOnLinkClick}>
+              +971 12 345 6789
             </a>
           </div>
         </div>

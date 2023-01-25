@@ -52,10 +52,9 @@
       height: 100%;
       width: fit-content;
       gap: 3rem;
-      @include media($md) {
+      @include media($xs) {
         height: fit-content;
         @include flex(column, flex-end, flex-end);
-        padding: 3.6rem 0rem 0.5rem 0;
         margin-right: 2vw;
         gap: 0.4rem;
         display: none;
@@ -108,16 +107,7 @@
     }
   }
 }
-@include media($md) {
-  .active {
-    min-height: 25vh;
-    max-height: 40vh;
-    .links {
-      display: flex !important;
-      animation: linksSlideIn 1s ease-in 0s;
-    }
-  }
-}
+
 @keyframes linksSlideIn {
   0% {
     opacity: 0;
@@ -126,8 +116,27 @@
     opacity: 1;
   }
 }
+@media screen and (max-width: $xs) and (orientation: portrait) {
+  .active {
+    min-height: 18vh;
+    max-height: 40vh;
+    .links {
+      display: flex !important;
+      animation: linksSlideIn 1s ease-in 0s;
+      position: relative;
+      top: 3vh;
+      right: 1vw;
+    }
+  }
+}
+@media screen and (max-width: $md) and (orientation: landscape) {
+  .hamburger {
+    display: none !important;
+  }
+  .links {
+    @include flex(row, space-around, center);
+  }
 
-@media (orientation: landscape) {
   .navbar {
     min-height: 12vh;
     .hamburger {

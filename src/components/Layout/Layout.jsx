@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import wha_logo from "../../assets/images/wha_logo.png";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
+import ReactWhatsapp from "react-whatsapp";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -27,9 +28,9 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
-      <a className="whatsapp-button" href="tel: +971 12 345 6789">
+      <ReactWhatsapp className="whatsapp-button" number="+9">
         <img src={wha_logo} alt="Whatsapp" />
-      </a>
+      </ReactWhatsapp>
       <div className="footer-container">
         <Footer />
       </div>

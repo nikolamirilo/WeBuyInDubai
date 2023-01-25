@@ -19,6 +19,14 @@
     position: fixed;
     bottom: 10px;
     right: 15px;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 100%;
+    border: none;
+    padding: 0;
     @include media($sm) {
       bottom: 12px;
       right: 15px;
@@ -27,12 +35,6 @@
       bottom: 7.5px;
       right: 10px;
     }
-    z-index: 10;
-    border-radius: 100%;
-    width: fit-content;
-    height: fit-content;
-    border: none;
-    cursor: pointer;
     img {
       width: 70px;
       height: auto;
