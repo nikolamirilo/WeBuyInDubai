@@ -1,9 +1,9 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import wha_logo from "../../assets/images/wha_logo.png";
+import ReactWhatsapp from "react-whatsapp";
+import wha_logo from "../../assets/images/wha-logo.webp";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
-import ReactWhatsapp from "react-whatsapp";
 
 const Layout = ({ children }) => {
   const location = useLocation();
