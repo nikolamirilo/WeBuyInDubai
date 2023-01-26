@@ -22,9 +22,9 @@
       display: block;
     }
     img {
-      height: 6vh;
+      height: 40px;
       margin: 1vh 0;
-      width: auto;
+      width: 100px;
     }
   }
   .navigation {
@@ -56,7 +56,7 @@
         height: fit-content;
         @include flex(column, flex-end, flex-end);
         margin-right: 2vw;
-        gap: 0.4rem;
+        gap: 0.6rem;
         display: none;
       }
       .phone {
@@ -118,7 +118,7 @@
 }
 @media screen and (max-width: $xs) and (orientation: portrait) {
   .active {
-    min-height: 18vh;
+    min-height: 20vh;
     max-height: 40vh;
     .links {
       display: flex !important;
