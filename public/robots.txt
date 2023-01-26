@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /maps.googleapis.com/
+Disallow: 
 
 Sitemap: https://webuyindubai.com/sitemap.xml
