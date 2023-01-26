@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import background from "../../assets/images/luxury_watches/background.webp";
 import audemars_piguet from "../../assets/images/luxury_watches/WeBuyAudemarsPiguet.webp";
 import blancpain from "../../assets/images/luxury_watches/WeBuyBlancpain.webp";
