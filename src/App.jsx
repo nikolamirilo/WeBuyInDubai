@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout, Loader, ScrollToTop } from "./components";
 import { useGlobalState } from "./context/GlobalContext";
@@ -17,15 +17,27 @@ const App = () => {
       {loading ? (
         <Loader />
       ) : (
-        <Suspense fallback="">
-          <ScrollToTop>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/luxury-watches" element={<LuxuryWatches />} />
-              <Route path="/*" element={<Error />} />
-            </Routes>
-          </ScrollToTop>
-        </Suspense>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/luxury-watches"
+              element={
+                <Suspense fallback="">
+                  <LuxuryWatches />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/*"
+              element={
+                <Suspense fallback="">
+                  <Error />
+                </Suspense>
+              }
+            />
+          </Routes>
+        </ScrollToTop>
       )}
     </Layout>
   );

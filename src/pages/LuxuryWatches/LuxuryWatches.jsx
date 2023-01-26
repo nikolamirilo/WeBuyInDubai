@@ -21,8 +21,9 @@ import tag_heuer from "../../assets/images/luxury_watches/WeBuyTAGHeuer.webp";
 import ulysse_nardin from "../../assets/images/luxury_watches/WeBuyUlysseNardin.webp";
 import vacheron_constantin from "../../assets/images/luxury_watches/WeBuyVacheronConstantin.webp";
 import zenith from "../../assets/images/luxury_watches/WeBuyZenith.webp";
-import { Card, Hero } from "../../components";
 import data from "../../data.json";
+const Hero = React.lazy(() => import("../../components/Hero/Hero"));
+const Card = React.lazy(() => import("../../components/Card/Card"));
 
 const LuxuryWatches = () => {
   const images = [
@@ -50,15 +51,19 @@ const LuxuryWatches = () => {
   ];
   return (
     <div className="luxury-watches">
-      <Hero
-        title={["We buy", "authentic", "luxury", "watches", "in Dubai", "for cash."]}
-        image={background}
-      />
-      <div className="watches-brands">
-        {data.watches_brands.map((item, idx) => {
-          return <Card key={idx} type="luxury-watches" title={item} image={images[idx]} />;
-        })}
-      </div>
+      <Suspense fallback="">
+        <Hero
+          title={["We buy", "authentic", "luxury", "watches", "in Dubai", "for cash."]}
+          image={background}
+        />
+      </Suspense>
+      <Suspense fallback="">
+        <div className="watches-brands">
+          {data.watches_brands.map((item, idx) => {
+            return <Card key={idx} type="luxury-watches" title={item} image={images[idx]} />;
+          })}
+        </div>
+      </Suspense>
     </div>
   );
 };
