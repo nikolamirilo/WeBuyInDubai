@@ -4,4 +4,3 @@ export { default as Layout } from "./Layout/Layout";
 export { default as Loader } from "./Loader/Loader";
 export { default as Map } from "./Map/Map";
 export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";
-export { default as Modal } from "./Modal/Modal";

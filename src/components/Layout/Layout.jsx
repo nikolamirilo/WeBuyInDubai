@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { useLocation } from "react-router-dom";
 import ReactWhatsapp from "react-whatsapp";
 import wha_logo from "../../assets/images/wha-logo.webp";
-import Footer from "./components/Footer/Footer.jsx";
-import Navbar from "./components/Navbar/Navbar.jsx";
+const Footer = React.lazy(() => import("./components/Footer/Footer.jsx"));
+const Navbar = React.lazy(() => import("./components/Navbar/Navbar.jsx"));
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -18,7 +18,9 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <div className="navbar-container">
-        <Navbar />
+        <Suspense fallback="">
+          <Navbar />
+        </Suspense>
       </div>
       <main
         className="app"
@@ -32,7 +34,9 @@ const Layout = ({ children }) => {
         <img src={wha_logo} alt="Whatsapp" />
       </ReactWhatsapp>
       <div className="footer-container">
-        <Footer />
+        <Suspense fallback="">
+          <Footer />
+        </Suspense>
       </div>
     </div>
   );

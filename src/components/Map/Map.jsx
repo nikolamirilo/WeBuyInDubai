@@ -8,7 +8,6 @@ const Map = () => {
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
       title="Dubai Marine Map"
-      sandbox="allow-scripts allow-modal"
     ></iframe>
   );
 };
