@@ -12,5 +12,4 @@ const Map = () => {
     ></iframe>
   );
 };
-
 export default Map;
