@@ -18,25 +18,13 @@ const App = () => {
         <Loader />
       ) : (
         <ScrollToTop>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              path="/luxury-watches"
-              element={
-                <Suspense fallback="">
-                  <LuxuryWatches />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/*"
-              element={
-                <Suspense fallback="">
-                  <Error />
-                </Suspense>
-              }
-            />
-          </Routes>
+          <Suspense fallback="">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/luxury-watches" element={<LuxuryWatches />} />
+              <Route path="/*" element={<Error />} />
+            </Routes>
+          </Suspense>
         </ScrollToTop>
       )}
     </Layout>
