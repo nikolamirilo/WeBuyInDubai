@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/WeBuyInDubai.png";
+import logo from "../../assets/images/WeBuyInDubai.webp";
 
 const Loader = () => {
   return (

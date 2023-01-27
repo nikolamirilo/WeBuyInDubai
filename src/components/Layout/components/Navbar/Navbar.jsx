@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocation, useNavigate } from "react-router-dom";
-import logo from "../../../../assets/images/WeBuyInDubai.png";
+import logo from "../../../../assets/images/WeBuyInDubai.webp";
 import { useGlobalState } from "./../../../../context/GlobalContext";
 
 const Navbar = () => {
@@ -55,7 +55,7 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="navigation">
-        {width < 1000 && (
+        {width < 600 && (
           <div
             className="hamburger"
             onClick={() => {
@@ -65,7 +65,6 @@ const Navbar = () => {
             <GiHamburgerMenu className="icon" />
           </div>
         )}
-
         <div className="links">
           <button
             style={{ color: isActive.home && "#f4a950" }}
