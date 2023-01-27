@@ -1,7 +1,7 @@
 .layout {
   width: 100%;
   height: fit-content;
-  @include fadeAnimation(0.4s, 0s);
+  @include fadeAnimation(0.2s, 0s);
   @include flex(column, none, none);
   position: relative;
   @import "./components/Footer/Footer";

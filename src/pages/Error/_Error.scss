@@ -1,6 +1,5 @@
 .error {
   min-height: 85vh;
-  @include fadeAnimation(0.4s, 0.1s);
   @include flex(row, center, center);
   @include pageSectionPadding;
   h1 {

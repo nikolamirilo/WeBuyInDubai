@@ -4,7 +4,6 @@
   z-index: 1000;
   transition: all 0.5s ease-out;
   max-height: 30vh;
-  @include fadeAnimation(0.4s, 0.1s);
   width: 100%;
   background-color: $darkGray;
   position: fixed;
