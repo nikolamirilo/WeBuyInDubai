@@ -1,0 +1,16 @@
+{
+  "short_name": "WeBuyInDubai",
+  "name": "WeBuyInDubai",
+  "start_url": "https://webuyindubai.com/",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "display": "standalone",
+  "description": "We buy used mobile phones, luxury watches and tablets in Dubai for cash.",
+  "icons": [
+    {
+      "src": "/WBID.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
