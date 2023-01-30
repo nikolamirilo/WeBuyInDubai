@@ -5,7 +5,8 @@
   "background_color": "#fff",
   "theme_color": "#fff",
   "display": "standalone",
-  "description": "We buy used mobile phones, luxury watches and tablets in Dubai for cash.",
+  "description": "We buy used mobile phones, luxury watches, tablets, smartwatches, laptops and cameras in Dubai for cash.",
+  "orientation": "portrait-vertical",
   "icons": [
     {
       "src": "/favicons/android-icon-36x36.png",
