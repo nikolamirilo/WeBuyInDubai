@@ -2,11 +2,10 @@
   "short_name": "WeBuyInDubai",
   "name": "WeBuyInDubai",
   "start_url": ".",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#161b21",
+  "theme_color": "#161b21",
   "display": "standalone",
   "description": "We buy used mobile phones, luxury watches, tablets, smartwatches, laptops and cameras in Dubai for cash.",
-  "orientation": "portrait-vertical",
   "icons": [
     {
       "src": "/favicons/android-icon-36x36.png",
