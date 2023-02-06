@@ -9,7 +9,7 @@ const Hero = (props) => {
             return <div key={idx}>{item}</div>;
           })}
         </h1>
-        <a href="tel:+971 12 345 6789">+971 12 345 6789</a>
+        <a href="tel:+971 58 592 1070">+971 58 592 1070</a>
       </div>
     </div>
   );
