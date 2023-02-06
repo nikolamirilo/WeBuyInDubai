@@ -85,8 +85,8 @@ const Navbar = () => {
             Luxury Watches
           </button>
           <div className="phone">
-            <a href="tel:+971 12 345 6789" onClick={closeSidebarOnLinkClick}>
-              +971 12 345 6789
+            <a href="tel:+971 58 592 1070" onClick={closeSidebarOnLinkClick}>
+              +971 58 592 1070
             </a>
           </div>
         </div>
