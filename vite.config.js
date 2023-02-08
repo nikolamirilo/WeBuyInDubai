@@ -1,6 +1,5 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig, splitVendorChunkPlugin } from "vite";
-import Sitemap from "vite-plugin-sitemap";
 
 export default defineConfig({
   plugins: [
@@ -8,7 +7,13 @@ export default defineConfig({
       runtimeHelpers: true,
     }),
     splitVendorChunkPlugin(),
-    Sitemap({ hostname: "https://webuyindubai.com" }),
+    // Sitemap({
+    //   hostname: "https://webuyindubai.com",
+    //   routes: [
+    //     { url: "/", changefreq: "daily", priority: 1 },
+    //     { url: "/luxury-watches", changefreq: "daily", priority: 0.8 },
+    //   ],
+    // }),
   ],
   build: {
     reportCompressedSize: true,
