@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
-      <ReactWhatsapp className="whatsapp-button" number="+971-58-592-1070">
+      <ReactWhatsapp className="whatsapp-button" number="+971-58-585-9100">
         <img src={wha_logo} alt="Whatsapp" />
       </ReactWhatsapp>
       <div className="footer-container">
