@@ -1,4 +1,5 @@
 import React from "react";
+import { phone_number } from "../../constants";
 
 const Hero = (props) => {
   return (
@@ -9,7 +10,7 @@ const Hero = (props) => {
             return <div key={idx}>{item}</div>;
           })}
         </h1>
-        <a href="tel:+971 58 592 1070">+971 58 592 1070</a>
+        <a href={`tel:${phone_number}`}>{phone_number}</a>
       </div>
     </div>
   );

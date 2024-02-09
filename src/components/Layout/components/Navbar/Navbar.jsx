@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../../../../assets/images/WeBuyInDubai.webp";
 import { useGlobalState } from "./../../../../context/GlobalContext";
+import { phone_number } from "../../../../constants";
 
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -85,8 +86,8 @@ const Navbar = () => {
             Luxury Watches
           </button>
           <div className="phone">
-            <a href="tel:+971 58 592 1070" onClick={closeSidebarOnLinkClick}>
-              +971 58 592 1070
+            <a href={`tel:${phone_number}`} onClick={closeSidebarOnLinkClick}>
+              {phone_number}
             </a>
           </div>
         </div>
